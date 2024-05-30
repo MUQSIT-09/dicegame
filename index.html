@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DICEE</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>DICEE</h1>
+        <div>
+            <label for="player1Name">Player 1 Name:</label>
+            <input type="text" id="player1Name" placeholder="Enter Player 1 Name">
+        </div>
+        <div>
+            <label for="player2Name">Player 2 Name:</label>
+            <input type="text" id="player2Name" placeholder="Enter Player 2 Name">
+        </div>
+        <button onclick="rollDice()">Roll Dice</button> <!-- Roll Dice button -->
+        <div class="dice">
+            <p id="player1Label"></p>
+            <img id="player1Dice" src="./images/dice6.png">
+        </div>
+        <div class="dice">
+            <p id="player2Label"></p>
+            <img id="player2Dice" src="./images/dice6.png">
+        </div>
+        <h2 id="result"></h2>
+    </div>
+    <script src="index.js" charset="UTF-8"></script>
+</body>
+</html>
